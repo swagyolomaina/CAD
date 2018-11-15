@@ -31,7 +31,7 @@ export default class Home extends Component {
       }
       
       projects() {
-        return API.get("table", "/table");
+        return API.get("projects", "/projects");
       }
     
       renderProjectsList(projects) {
@@ -40,7 +40,7 @@ export default class Home extends Component {
               i !== 0
                 ? <LinkContainer
                     key={project.tableId}
-                    to={`/table/${project.tableId}`}
+                    to={`/projects/${project.tableId}`}
                   >
                     <ListGroupItem header={project.content.trim().split("\n")[0]}>
                       {"Created: " + new Date(project.createdAt).toLocaleString()}
@@ -48,7 +48,7 @@ export default class Home extends Component {
                   </LinkContainer>
                 : <LinkContainer
                     key="new"
-                    to="/table/new"
+                    to="/projects/new"
                   >
                     <ListGroupItem>
                       <h4>

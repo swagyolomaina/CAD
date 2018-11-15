@@ -64,7 +64,7 @@ export default class NewProject extends Component {
   }
 
   createProject(project) {
-    return API.post('table', '/table', {
+    return API.post('projects', '/projects', {
       body: project
     });
   }

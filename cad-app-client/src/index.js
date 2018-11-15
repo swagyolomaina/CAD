@@ -22,7 +22,7 @@ Amplify.configure({
 	API: {
 		endpoints: [
 			{
-				name: "table",
+				name: "projects",
 				endpoint: config.apiGetaway.URL,
 				region: config.apiGetaway.REGION
 			},
