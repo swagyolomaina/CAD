@@ -11,3 +11,15 @@
 .Home .lander p {
     color: #999;
 }
+
+.Home .projects h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .Home .notes p {
+    color: #666;
+  }

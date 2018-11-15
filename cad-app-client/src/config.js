@@ -1,4 +1,6 @@
 export default {
+    MAX_ATTACHMENT_SIZE: 5000000,
+
     s3: {
         REGION: 'us-east-2',
         BUCKET: 'gogo-bucket-head'
@@ -10,7 +12,7 @@ export default {
     cognito: {
         REGION: 'us-east-2',
         USER_POOL_ID: 'us-east-2_bTunqrrYc',
-        APP_CLIEN_ID: '3cj8uaktiai4fftd1mufeughmp',
+        APP_CLIENT_ID: '3cj8uaktiai4fftd1mufeughmp',
         IDENTITY_POOL_ID: 'us-east-2:5b553f9f-6943-466f-9add-f09900fef2a9'
     }
 };
